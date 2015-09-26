@@ -95,7 +95,7 @@ function receiveNotificationsPage(targetPage, data, textStatus, jqXHR){
 	  + "   border-radius: 4px; "
 	  //+ "   max-height: 90%; "
 	  //+ "   margin-bottom: 20px; "   // If the body is shorter than the dropdown, the body will expand to let it fit, but only just.  This will ensure a little bit of extra space is available for the shadow and a small gap.
-	  + "   z-index: 10000000; "     // To appear above the .bootcamp .desc on the front page and .table-list-header on .../issues
+	  + "   z-index: 50; "     // To appear above the .bootcamp .desc on the front page and .table-list-header on .../issues
 	  + " } "
 	  + " .notifications-dropdown > center { "
 	  + "   padding: 8px 8px; "
