@@ -75,8 +75,8 @@ function receiveNotificationsPage(targetPage, data, textStatus, jqXHR){
 	});
 	var minWidth = Math.min(500, window.innerWidth-48);
 	if (notificationsList.children().length == 0) {
-		notificationsDropdown.append("<center>No new notifications</center>");
-		minWidth = 0;
+		notificationsDropdown.append("<span class='notifications-dropdown-no-new'>No new notifications</span>");
+		minWidth = 200;
 	}
 	notificationsDropdown.append(notificationsList);
 	var linkToPage = mainNotificationsPath;
@@ -109,7 +109,7 @@ function receiveNotificationsPage(targetPage, data, textStatus, jqXHR){
 	  + " .notifications-dropdown-see-all { "
 	  + "   display: block; "
 	  + "   font-weight: bold; "
-	  + "   margin-top: -20px; "
+	  + "   margin-top: 20px; "
 	  + "   padding: 5px; "
 	  + "   text-align: center; "
 	  + "   background-color: #F5F5F5 !important; "
@@ -120,11 +120,21 @@ function receiveNotificationsPage(targetPage, data, textStatus, jqXHR){
 	  + "   color: white; "
 	  + "   text-decoration: none; "
 	  + " } "
+	  + " .notifications-dropdown-no-new { "
+	  + "   display: block; "
+	  + "   height: 30px; "
+	  + "   line-height: 30px; "
+	  + "   padding: 0 10px; "
+	  + "   margin-bottom: -20px; "
+	  + "   text-align: center; "
+	  + "   font-weight: bold; "
+	  + "   font-size: 16px; "
+	  + " } "
 	  // Redesign the notification area.
-	  + " .notifications-dropdown > .boxed-group > h3 { "
+	  + " .notifications-dropdown .boxed-group > h3 { "
 	  + "   border-radius: 0; border-width: 1px 0 0; "
 	  + " } "
-	  + " .notifications-dropdown > .boxed-group-inner { "
+	  + " .notifications-dropdown .boxed-group-inner { "
 	  + "   border: 0; "
 	  + "   border-radius: 0; "
 	  + "   padding: 0; "
