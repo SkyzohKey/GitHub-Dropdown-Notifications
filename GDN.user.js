@@ -126,7 +126,8 @@ function receiveNotificationsPage(targetPage, data, textStatus, jqXHR){
 	  + " } "
 	  // Redesign the notification area.
 	  + " .notifications-dropdown .boxed-group > h3 { "
-	  + "   border-radius: 0; border-width: 1px 0 0; "
+	  + "   border-radius: 0; "
+	  + "   border-width: 0px 0px 0px; "
 	  + " } "
 	  + " .notifications-dropdown .boxed-group-inner { "
 	  + "   border: 0; "
