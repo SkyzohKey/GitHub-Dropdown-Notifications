@@ -9,4 +9,4 @@ You can view your GitHub notifications from any GitHub page. Clicking the notifi
 * This script also makes files in diff views collapsible.
 
 ## Screenshot:
-![](http://i.imgur.com/IwtO24z.png)
+![](http://i.imgur.com/84rE2S1.png)
